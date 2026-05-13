@@ -18,7 +18,7 @@ func main() {
 	cli.Command("list", "List all 2FA entries.", cmdList)
 	cli.Command("remove", "Remove a 2FA entry.", cmdRemove)
 	cli.Command("show", "Show a 2FA entry.", cmdShow)
-	cli.Command("help", "Show this help message.", cli.ShowHelp)
+	cli.AutoHelp(true)
 	cli.Parse()
 	cli.ShowHelp()
 }
